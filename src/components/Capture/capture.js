@@ -197,7 +197,7 @@ class Capture extends Component {
   }
 
   render ({useWebcam, ...other}) {
-    const useCapture = (!this.state.uploadFallback && useWebcam && isDesktop && this.state.hasWebcam)
+    const useCapture = (!this.state.uploadFallback && useWebcam && this.state.hasWebcam)
     return (
       <CaptureMode {...{useCapture,
         onScreenshot: this.onScreenshot,
