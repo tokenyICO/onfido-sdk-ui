@@ -60,7 +60,7 @@ const CameraPure = ({method, autoCapture, onUploadFallback, onFallbackClick,
       <Webcam
         className={style.video}
         audio={false}
-        height={720}
+        height={480}
         {...{onUserMedia, ref: webcamRef, onFailure: onWebcamError}}
       />
       <Overlay {...{method, countDownRef}}/>
